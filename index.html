@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rahul's Portfolio Website Template</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="site-shell">
+		<header class="topbar">
+			<div class="brand"><span class="brand-mark">R</span> Rahul's Portfolio</div>
+			<div class="top-note">A portfolio website template you can make your own.</div>
+		</header>
+		<main class="workspace">
+			<aside class="editor">
+				<span class="eyebrow">Portfolio website template</span>
+				<h1>Make a site that sounds like you.</h1>
+				<p class="intro">This is Rahul's portfolio structure. Edit the fields to make your own version, then download the finished website. Your copy stays in this browser.</p>
+				<form id="portfolio-form">
+					<section class="form-section">
+						<div class="section-title">Your story <span class="eyebrow">01</span></div>
+						<div class="field"><label for="name">Name</label><input id="name" data-key="name" value="Rahul Marandi" placeholder="Your name"></div>
+						<div class="field"><label for="role">Role or headline</label><input id="role" data-key="role" value="B.Tech CSE-IoT student &amp; technology enthusiast" placeholder="What do you do?"></div>
+						<div class="field"><label for="bio">Short introduction</label><textarea id="bio" data-key="bio" placeholder="Tell people what you care about...">I am Rahul Marandi, a B.Tech student specializing in Computer Science and Engineering with Internet of Things at Meghnad Saha Institute of Technology, Kolkata. Session: 2023-27. I enjoy building practical technology projects and learning how connected systems can solve real problems.</textarea></div>
+					</section>
+					<section class="form-section">
+						<div class="section-title">Contact <span class="eyebrow">02</span></div>
+						<div class="two-col"><div class="field"><label for="location">Based in</label><input id="location" data-key="location" value="Kolkata, India"></div><div class="field"><label for="phone">Contact number</label><input id="phone" data-key="phone" value="" placeholder="Your phone number" type="tel"></div></div>
+						<div class="field"><label for="address">Address</label><input id="address" data-key="address" value="Kolkata, India" placeholder="Your address"></div>
+						<div class="field"><label for="email">Email</label><input id="email" data-key="email" value="" placeholder="your.email@example.com" type="email"></div>
+						<div class="field"><label for="github">GitHub profile</label><input id="github" data-key="github" value="https://github.com/Rahul1mardi" placeholder="https://github.com/yourname" type="url"></div>
+						<div class="two-col"><div class="field"><label for="linkedin">LinkedIn profile</label><input id="linkedin" data-key="linkedin" value="" placeholder="https://linkedin.com/in/yourname" type="url"></div><div class="field"><label for="facebook">Facebook profile</label><input id="facebook" data-key="facebook" value="" placeholder="https://facebook.com/yourname" type="url"></div></div>
+					</section>
+					<section class="form-section">
+						<div class="section-title">Education <span class="eyebrow">03</span></div>
+						<div class="field"><label for="secondarySchool">Secondary school</label><input id="secondarySchool" data-key="secondarySchool" value="Your secondary school name" placeholder="Secondary school name"></div>
+						<div class="field"><label for="secondaryMarks">Secondary marks</label><input id="secondaryMarks" data-key="secondaryMarks" value="" placeholder="For example: 85%"></div>
+						<div class="field"><label for="higherSecondarySchool">Higher secondary school</label><input id="higherSecondarySchool" data-key="higherSecondarySchool" value="Your higher secondary school name" placeholder="Higher secondary school name"></div>
+						<div class="field"><label for="higherSecondaryMarks">Higher secondary marks</label><input id="higherSecondaryMarks" data-key="higherSecondaryMarks" value="" placeholder="For example: 85%"></div>
+						<div class="field"><label for="college">College / university</label><input id="college" data-key="college" value="Meghnad Saha Institute of Technology, Kolkata" placeholder="College or university"></div>
+						<div class="two-col"><div class="field"><label for="cgpa">CGPA</label><input id="cgpa" data-key="cgpa" value="" placeholder="For example: 8.5"></div><div class="field"><label for="session">Session</label><input id="session" data-key="session" value="2023-27" placeholder="For example: 2023-27"></div></div>
+					</section>
+					<section class="form-section">
+						<div class="section-title">Skills &amp; experience <span class="eyebrow">04</span></div>
+						<div class="field"><label for="skills">Skills</label><textarea id="skills" data-key="skills" placeholder="For example: JavaScript, IoT, Python, teamwork">C, C++, Python, JavaScript, IoT, HTML, CSS</textarea></div>
+						<div id="experience-fields"></div>
+						<button class="add-button" id="add-experience" type="button">+ Add work experience</button>
+					</section>
+					<section class="form-section">
+						<div class="section-title">Finishing touch <span class="eyebrow">05</span></div>
+						<div class="field color-row"><label for="accent">Accent color</label><input id="accent" data-key="accent" type="color" value="#dd5c38"></div>
+						<button class="download-button" type="button" id="download">Download website code</button>
+						<button class="reset-button" type="button" id="reset">Reset to Rahul's template</button>
+					</section>
+				</form>
+			</aside>
+			<section class="preview-wrap">
+				<div class="preview-label"><span>Live website preview</span><span class="status">Saved in this browser</span></div>
+				<article class="portfolio" id="portfolio-preview"></article>
+			</section>
+		</main>
+	</div>
+	<script src="website.js"></script>
+</body>
+</html>
